@@ -1,0 +1,259 @@
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~$ cd /home/mca/Desktop/Joshua/ADM
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/Desktop/Joshua/ADM$ git status
+On branch master
+
+Initial commit
+
+nothing to commit (create/copy files and use "git add" to track)
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/Desktop/Joshua/ADM$ cat file.sh
+cat: file.sh: No such file or directory
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/Desktop/Joshua/ADM$ cat >file.sh
+echo This Is A New Line
+echo This is Another Line
+echo Another Line Of Code.    
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/Desktop/Joshua/ADM$ git status
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	file.sh
+
+nothing added to commit but untracked files present (use "git add" to track)
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/Desktop/Joshua/ADM$ bash file.sh
+This Is A New Line
+This is Another Line
+Another Line Of Code.
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/Desktop/Joshua/ADM$ git add file.sh
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/Desktop/Joshua/ADM$ git status
+On branch master
+
+Initial commit
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+	new file:   file.sh
+
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/Desktop/Joshua/ADM$ git commit -m "Successfully Added"
+[master (root-commit) 10ffaaa] Successfully Added
+ 1 file changed, 3 insertions(+)
+ create mode 100644 file.sh
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/Desktop/Joshua/ADM$ git status
+On branch master
+nothing to commit, working directory clean
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/Desktop/Joshua/ADM$ cat >file.sh
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/Desktop/Joshua/ADM$ cat >file.sh
+echo This Is A Line
+echo This Is Another Line
+echo The Third Line Code
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/Desktop/Joshua/ADM$ nano file.sh
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/Desktop/Joshua/ADM$ bash file.sh
+This Is A Line.
+This Is Another Line.
+The Third Line Code.
+Enter First Name
+joshua
+Name is:Name
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/Desktop/Joshua/ADM$ nano file.sh
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/Desktop/Joshua/ADM$ bash file.sh
+This Is A Line.
+This Is Another Line.
+The Third Line Code.
+Enter First Name
+Joshua
+Name is:Joshua
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/Desktop/Joshua/ADM$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   file.sh
+
+no changes added to commit (use "git add" and/or "git commit -a")
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/Desktop/Joshua/ADM$ git add file.sh
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/Desktop/Joshua/ADM$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	modified:   file.sh
+
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/Desktop/Joshua/ADM$ git commit file.sh
+Aborting commit due to empty commit message.
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/Desktop/Joshua/ADM$ git commit
+Aborting commit due to empty commit message.
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/Desktop/Joshua/ADM$ git commit -m "Successfull"
+[master a5eab59] Successfull
+ 1 file changed, 7 insertions(+), 3 deletions(-)
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/Desktop/Joshua/ADM$ git status
+On branch master
+nothing to commit, working directory clean
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/Desktop/Joshua/ADM$ 
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/Desktop/Joshua/ADM$ 
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/Desktop/Joshua/ADM$ 
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/Desktop/Joshua/ADM$ 
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/Desktop/Joshua/ADM$ 
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/Desktop/Joshua/ADM$ cd 
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~$ cd /home/mca/Desktop/Joshua/Shell
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/Desktop/Joshua/Shell$ ls
+prgm1  prgm2  Temp
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/Desktop/Joshua/Shell$ git config user.name "joshua"
+error: could not lock config file .git/config: No such file or directory
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/Desktop/Joshua/Shell$ cd Shell
+bash: cd: Shell: No such file or directory
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/Desktop/Joshua/Shell$ cd temp
+bash: cd: temp: No such file or directory
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/Desktop/Joshua/Shell$ cd Temp
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/Desktop/Joshua/Shell/Temp$ git add .
+fatal: Not a git repository (or any of the parent directories): .git
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/Desktop/Joshua/Shell/Temp$ git init
+Initialized empty Git repository in /home/mca/Desktop/Joshua/Shell/Temp/.git/
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/Desktop/Joshua/Shell/Temp$ git add .
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/Desktop/Joshua/Shell/Temp$ cat >biodata.sh
+echo "Enter Name"
+read name
+echo "Enter Age"
+read Age
+echo "Enter Salary"
+read salary
+echo "Name Is "$name
+echo "Age Is "$Age        
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/Desktop/Joshua/Shell/Temp$ bash biodata.sh
+Enter Name
+joshua
+Enter Age
+22
+Enter Salary
+35000
+Name Is joshua
+Age Is 22
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/Desktop/Joshua/Shell/Temp$ git status
+On branch master
+
+Initial commit
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+	new file:   prgm1
+	new file:   prgm2
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	biodata.sh
+
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/Desktop/Joshua/Shell/Temp$ git add biodata.sh
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/Desktop/Joshua/Shell/Temp$ git status
+On branch master
+
+Initial commit
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+	new file:   biodata.sh
+	new file:   prgm1
+	new file:   prgm2
+
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/Desktop/Joshua/Shell/Temp$ git commit biodata.sh
+Aborting commit due to empty commit message.
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/Desktop/Joshua/Shell/Temp$ git commit -m "First Submit"
+[master (root-commit) 7853cc7] First Submit
+ 3 files changed, 205 insertions(+)
+ create mode 100644 biodata.sh
+ create mode 100644 prgm1
+ create mode 100644 prgm2
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/Desktop/Joshua/Shell/Temp$ git status
+On branch master
+nothing to commit, working directory clean
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/Desktop/Joshua/Shell/Temp$ nano biodata.sh
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/Desktop/Joshua/Shell/Temp$ git add biodata.sh
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/Desktop/Joshua/Shell/Temp$ git commit -m "Complete Profile Data"
+[master 09b7432] Complete Profile Data
+ 1 file changed, 1 insertion(+)
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/Desktop/Joshua/Shell/Temp$ git status
+On branch master
+nothing to commit, working directory clean
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/Desktop/Joshua/Shell/Temp$ cat >simple.sh
+simple File
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/Desktop/Joshua/Shell/Temp$ cat >sample.sh
+Sample File
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/Desktop/Joshua/Shell/Temp$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	sample.sh
+	simple.sh
+
+nothing added to commit but untracked files present (use "git add" to track)
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/Desktop/Joshua/Shell/Temp$ nano simple.sh
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/Desktop/Joshua/Shell/Temp$ bash simple.sh
+simple.sh: line 1: simple: command not found
+simple.sh: line 2: This: command not found
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/Desktop/Joshua/Shell/Temp$ nano sample.sh
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/Desktop/Joshua/Shell/Temp$ bash sample.sh
+sample.sh: line 1: Sample: command not found
+sample.sh: line 2: Modified: command not found
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/Desktop/Joshua/Shell/Temp$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	sample.sh
+	simple.sh
+
+nothing added to commit but untracked files present (use "git add" to track)
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/Desktop/Joshua/Shell/Temp$ git add -u
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/Desktop/Joshua/Shell/Temp$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	sample.sh
+	simple.sh
+
+nothing added to commit but untracked files present (use "git add" to track)
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/Desktop/Joshua/Shell/Temp$ git add .
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/Desktop/Joshua/Shell/Temp$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   sample.sh
+	new file:   simple.sh
+
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/Desktop/Joshua/Shell/Temp$ git commit "Two Files modified"
+error: pathspec 'Two Files modified' did not match any file(s) known to git.
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/Desktop/Joshua/Shell/Temp$ git commit -m "Two Files modified"
+[master 9c13d40] Two Files modified
+ 2 files changed, 4 insertions(+)
+ create mode 100644 sample.sh
+ create mode 100644 simple.sh
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/Desktop/Joshua/Shell/Temp$ bash sample.sh
+sample.sh: line 1: Sample: command not found
+sample.sh: line 2: Modified: command not found
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/Desktop/Joshua/Shell/Temp$ git config user.name "Joshua"
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/Desktop/Joshua/Shell/Temp$ git config user.email "Pkjoshua123@gmail.com"
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/Desktop/Joshua/Shell/Temp$ git commit -m "No Changes"
+On branch master
+nothing to commit, working directory clean
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/Desktop/Joshua/Shell/Temp$ git clone --depth 2 git://github.com/tswicegood/bobby-tables.git
+Cloning into 'bobby-tables'...
+remote: Counting objects: 16, done.
+remote: Compressing objects: 100% (12/12), done.
+remote: Total 16 (delta 2), reused 16 (delta 2), pack-reused 0
+Receiving objects: 100% (16/16), 37.76 KiB | 0 bytes/s, done.
+Resolving deltas: 100% (2/2), done.
+Checking connectivity... done.
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/Desktop/Joshua/Shell/Temp$ git clone git://github.com/tswicegood/bobby-tables.git
+fatal: destination path 'bobby-tables' already exists and is not an empty directory.
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/Desktop/Joshua/Shell/Temp$ 
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/Desktop/Joshua/Shell/Temp$ mkdir moved
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/Desktop/Joshua/Shell/Temp$ git mv sample.sh moved
+

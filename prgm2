@@ -1,0 +1,49 @@
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/joshua$ more +3 doc.txt
+jose
+jancy
+jency
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/joshua$ more +5 doc.txt
+jency
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/joshua$ nano head
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/joshua$ man head
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/joshua$ head doc.txt
+haaiii
+amritha
+joshua
+jose
+jancy
+jency
+hgft
+juhguyij
+uiyhiu
+term
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/joshua$ head -n, --lines=[-]Kdoc.txt
+head: ,: invalid number of lines
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/joshua$ -n, --lines=[-]K
+-n,: command not found
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/joshua$ tail doc.txt
+jose
+jancy
+jency
+hgft
+juhguyij
+uiyhiu
+term
+end
+uiyhui
+
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/joshua$ man grep
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/joshua$ grep jos doc.txt
+joshua
+jose
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/joshua$ man expr
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/joshua$ expr 25*1
+25*1
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/joshua$ man expr
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/joshua$ read a
+
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/joshua$ 
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/joshua$ man tar
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/joshua$ ^C
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/joshua$ 
+

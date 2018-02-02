@@ -1,0 +1,148 @@
+mca@mca-desktop:~$ echo hello
+hello
+mca@mca-desktop:~$ read
+12
+mca@mca-desktop:~$ read name
+joshua
+mca@mca-desktop:~$ echo $name
+joshua
+mca@mca-desktop:~$ man read
+mca@mca-desktop:~$ 
+mca@mca-desktop:~$ mkdir joshua
+mca@mca-desktop:~$ cd joshua
+mca@mca-desktop:~/joshua$ nano file1.sh
+
+Error reading /home/mca/.nano_history: Permission denied
+
+Press Enter to continue starting nano.
+
+mca@mca-desktop:~/joshua$ bash file1.sh
+enter name
+joshua
+Hai  joshua
+mca@mca-desktop:~/joshua$ wc file1.sh
+ 3  9 46 file1.sh
+mca@mca-desktop:~/joshua$ ls
+file1.sh
+mca@mca-desktop:~/joshua$ find file1.sh
+file1.sh
+mca@mca-desktop:~/joshua$ find file2.sh
+find: `file2.sh': No such file or directory
+mca@mca-desktop:~/joshua$ mkdir joshua/joshua1/joshua2
+mkdir: cannot create directory ‘joshua/joshua1/joshua2’: No such file or directory
+mca@mca-desktop:~/joshua$ ls
+file1.sh
+mca@mca-desktop:~/joshua$ rmdir file1.sh
+rmdir: failed to remove ‘file1.sh’: Not a directory
+mca@mca-desktop:~/joshua$ rmdir joshua
+rmdir: failed to remove ‘joshua’: No such file or directory
+mca@mca-desktop:~/joshua$ cd home
+bash: cd: home: No such file or directory
+mca@mca-desktop:~/joshua$ 
+
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~$ mkdir joshua/joshua1/joshua2
+mkdir: cannot create directory ‘joshua/joshua1/joshua2’: No such file or directory
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~$ man mkdir
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~$ mkdir joshua
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~$ mkdir joshua/joshua1/joshua2
+mkdir: cannot create directory ‘joshua/joshua1/joshua2’: No such file or directory
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~$ man mkdir
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~$ mkdir joshua/joshua1
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~$ rmdir joshua1
+rmdir: failed to remove ‘joshua1’: No such file or directory
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~$ cd joshua
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/joshua$ rmdir joshua1
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/joshua$ mkdir joshua1
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/joshua$ cd joshua1
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/joshua/joshua1$ mkdir joshua2
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/joshua/joshua1$ ls
+joshua2
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/joshua/joshua1$ pwd
+/home/mca/joshua/joshua1
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/joshua/joshua1$ cd joshua
+bash: cd: joshua: No such file or directory
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/joshua/joshua1$ cd joshua1
+bash: cd: joshua1: No such file or directory
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/joshua/joshua1$ pwd
+/home/mca/joshua/joshua1
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/joshua/joshua1$ cd joshua2
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/joshua/joshua1/joshua2$ cd joshua1
+bash: cd: joshua1: No such file or directory
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/joshua/joshua1/joshua2$ cd ..
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/joshua/joshua1$ cd joshua
+bash: cd: joshua: No such file or directory
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/joshua/joshua1$ cd 
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~$ cd joshua
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/joshua$ rmdir joshua1
+rmdir: failed to remove ‘joshua1’: Directory not empty
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/joshua$ rm joshua1
+rm: cannot remove ‘joshua1’: Is a directory
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/joshua$ cd joshua1
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/joshua/joshua1$ rmdir josh.sh
+rmdir: failed to remove ‘josh.sh’: No such file or directory
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/joshua/joshua1$ nano josh.sh
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/joshua/joshua1$ find josh.sh
+josh.sh
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/joshua/joshua1$ file josh.sh
+josh.sh: ASCII text
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/joshua/joshua1$ josh.sh
+josh.sh: command not found
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/joshua/joshua1$ bash josh.sh
+Enter Name
+joshua
+Hai joshua
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/joshua/joshua1$ ls
+josh.sh  joshua2
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/joshua/joshua1$ rm joshua1
+rm: cannot remove ‘joshua1’: No such file or directory
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/joshua/joshua1$ rm joshua2
+rm: cannot remove ‘joshua2’: Is a directory
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/joshua/joshua1$ ls joshua2
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/joshua/joshua1$ ls joshua1
+ls: cannot access joshua1: No such file or directory
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/joshua/joshua1$ rm josh.sh
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/joshua/joshua1$ find josh.sh
+find: `josh.sh': No such file or directory
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/joshua/joshua1$ pwd
+/home/mca/joshua/joshua1
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/joshua/joshua1$ cd ..
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/joshua$ cd joshua1
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/joshua/joshua1$ rmdir joshua2
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/joshua/joshua1$ man move
+No manual entry for move
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/joshua/joshua1$ man mv
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/joshua/joshua1$ cat file1.sh
+cat: file1.sh: No such file or directory
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/joshua/joshua1$ nano file1.sh
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/joshua/joshua1$ vi
+
+[1]+  Stopped                 vi
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/joshua/joshua1$ vi
+
+[2]+  Stopped                 vi
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/joshua/joshua1$ 
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/joshua/joshua1$ 
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/joshua/joshua1$ mv file1.sh joshua2
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/joshua/joshua1$ mkdir joshua2
+mkdir: cannot create directory ‘joshua2’: File exists
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/joshua/joshua1$ mkdir joshua2
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/joshua/joshua1$ mv -t file1.sh joshua2
+mv: failed to access ‘file1.sh’: No such file or directory
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/joshua/joshua1$ mv -t file1.sh joshua2
+mv: target ‘file1.sh’ is not a directory
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/joshua/joshua1$ mv joshua1 joshua2
+mv: cannot stat ‘joshua1’: No such file or directory
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/joshua/joshua1$ mv -t joshua1 joshua2
+mv: failed to access ‘joshua1’: No such file or directory
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/joshua/joshua1$ man mv
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/joshua/joshua1$ mv -t joshua1 joshua2
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/joshua/joshua1$ mv -t joshua1 3
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/joshua/joshua1$ man move
+No manual entry for move
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/joshua/joshua1$ man more
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/joshua/joshua1$ 
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/joshua/joshua1$ 
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/joshua/joshua1$ cd
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~$ cd joshua
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/joshua$ 
+
